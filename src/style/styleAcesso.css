@@ -1,0 +1,107 @@
+.containerAcesso{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.parteImagem{
+    height: 100%;
+    width: 50%;
+    background-color: #ff504a6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parteImagem img{
+    width: 80%;
+    height: 70%;
+}
+
+.parteAcesso{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.parteAcesso h1{
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.parteAcesso form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+}
+
+.parteAcesso form > *{
+    margin: 8px 0;
+}
+
+.parteAcesso form input[type="email"], input[type="password"], input[type="text"]{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #00000017;
+    font-size: 18px;
+}
+
+.parteAcesso form label{
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+}
+
+.parteAcesso form input[type="submit"]{
+    margin-top: 40px;
+    width: 100%;
+    padding: 15px;
+    color: #FFFFFF;
+    background-color: #ff4343;
+    border: 1px solid #ff3c3c;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.parteAcesso form input[type="submit"]:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #ff434338;
+    background-color: #ff5b5b;
+    border: 1px solid #ff4747;
+    font-size: 19.5px;
+    transition: 0.5s;
+}
+
+.parteAcesso form button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    color: #000000;
+    border: 1px solid #292929;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.parteAcesso form button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #00000013;
+    background-color: #ffffff;
+    color: #353535;
+    font-size: 19.5px;
+    transition: 0.5s;
+}
