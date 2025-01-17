@@ -55,6 +55,7 @@ src/
 - **Frontend:**
   - HTML5
   - CSS3
+  - Javascript
 
 - **Backend:**
   - PHP 8+
