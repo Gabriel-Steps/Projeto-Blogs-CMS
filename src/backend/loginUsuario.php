@@ -14,6 +14,7 @@ $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if ($resultado && password_verify($senha, $resultado['senha'])) {
     $_SESSION['nomeUsuario'] = $resultado['nome'];
+    $_SESSION['img_perfil'] = $resultado['imagem'];
     header("Location: ../pages/paginaPrincipal.php");
     exit();
 } else {

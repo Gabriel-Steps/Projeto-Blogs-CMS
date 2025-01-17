@@ -12,16 +12,39 @@ if (!isset($_SESSION['nomeUsuario'])) {
     <title>Página de Blogs</title>
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/stylePaginaPrincipal.css">
+    <script src="../scripts/scriptTelaPrincipalEstilo.js"></script>
+    <script src="../scripts/inserirPostagensTela.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="cabecalhoDiv">
+        <nav class="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Publicar post</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sua conta</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="containerUsario">
             <div class="containerInfoUsuario">
-                Seja bem-vindo, <?php echo $_SESSION['nomeUsuario'] ?>
+                <h3>Seja bem-vindo, <b><?php echo $_SESSION['nomeUsuario'] ?></b></h3>
                 <img class="imagemPerfilUsuario" src="../<?php echo htmlspecialchars($_SESSION['img_perfil']); ?>" alt="Imagem de perfil do usuário">
             </div>
-            <a href="../backend/logout.php">Sair</a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="showMenu()"><img class="icon" src="../images/menu-icon.png" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <a href="">Início</a><br>
+            <a href="">Publicar post</a><br>
+            <a href="">Sua conta</a><br>
+            <a href="">Sobre Nós</a><br>
+            <a href="../backend/logout.php" class="sairDaConta">Sair</a>
         </div>
     </header>
+    <div id="container-posts" class="containerPosts"></div>
 </body>
 </html>

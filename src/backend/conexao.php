@@ -1,5 +1,5 @@
 <?php
-$host = 'seu-servidor';
+$host = 'seu-host';
 $db = 'db_projetoblogs';
 $user = 'seu-usuario';
 $password = 'sua-senha';

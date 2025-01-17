@@ -34,7 +34,7 @@
     font-weight: bold;
     letter-spacing: 0.1rem;
     font-size: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .parteAcesso form{
@@ -104,4 +104,16 @@
     color: #353535;
     font-size: 19.5px;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 730px){
+    .parteImagem{
+        display: none;
+        transition: 0.5s;
+    }
+
+    .parteAcesso{
+        width: 100%;
+        transition: 0.5;
+    }
 }

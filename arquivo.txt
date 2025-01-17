@@ -1,0 +1,7 @@
+<div class="cabecalhoDiv">
+            <div class="containerInfoUsuario">
+                Seja bem-vindo, <?php echo $_SESSION['nomeUsuario'] ?>
+                <img class="imagemPerfilUsuario" src="../<?php echo htmlspecialchars($_SESSION['img_perfil']); ?>" alt="Imagem de perfil do usuário">
+            </div>
+            <a href="../backend/logout.php">Sair</a>
+        </div>
