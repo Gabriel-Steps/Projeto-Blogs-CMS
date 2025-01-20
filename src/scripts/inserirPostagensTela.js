@@ -10,15 +10,17 @@ async function carregarPosts() {
         const container = document.getElementById('container-posts');
         container.innerHTML = '';
         posts.forEach((post) => {
+            [ano, mes, dia] = post.data_criacao.split('-')
             const elemento = document.createElement('div');
             elemento.className = 'containerPostagem';
             elemento.innerHTML = `
                 <div class='containerInfoUsuario'>
-                    <img src="${'https://localhost/ProjetoBlogsOnline/src/'+post.imagem_usuario}" alt="${post.nome_usuario}" class="imagemPerfilPost">
+                    <img src="${'https://localhost/ProjetoBlogsOnline/src/' + post.imagem_usuario}" alt="${post.nome_usuario}" class="imagemPerfilPost">
                     ${post.nome_usuario}
                 </div>
-                <h2>${post.tituto}</h2>
+                <h2>${post.titulo}</h2>
                 <p>${post.conteudo}</p>
+                <p>Publicado dia: ${dia}/${mes}/${ano}</p>
             `;
             container.appendChild(elemento);
         });

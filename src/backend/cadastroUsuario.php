@@ -31,6 +31,7 @@ if (isset($_FILES['enderecoImagemNovoUsuario']) && $_FILES['enderecoImagemNovoUs
             if ($stmt->rowCount() > 0) {
                 $_SESSION['nomeUsuario'] = $nome;
                 $_SESSION['img_perfil'] = $caminhoRelativo;
+                $_SESSION['emailUsuario'] = $email;
                 echo "Usuário cadastrado com sucesso!";
                 header("Location: ../pages/paginaPrincipal.php");
             } else {

@@ -1,0 +1,75 @@
+.containerPrincipal{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerPrincipal hr{
+    width: 100%;
+    border: 1px solid #ff00008e;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.tituloContainerPrincipal{
+    width: 100%;
+}
+
+.tituloContainerPrincipal h1{
+    letter-spacing: 0.1rem;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.containerPrincipal form{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.containerPrincipal form input[type="text"]{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #00000042;
+    margin: 10px 0;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.containerPrincipal form label{
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+}
+
+#descricaoPostNovo{
+    height: 10rem;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+}
+
+.containerPrincipal form input[type="submit"]{
+    padding: 15px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: #00FF00;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+}
+
+.containerPrincipal form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #5cff5c;
+    transition: 0.5s;
+}
