@@ -27,6 +27,7 @@ Este projeto é um sistema de publicação de blogs (CMS) desenvolvido em HTML, 
 src/
 ├── backend/
 │   ├── cadastroUsuario.php
+│   ├── cadastrarPost.php
 │   ├── conexao.php
 │   ├── loginUsuario.php
 │   ├── logout.php
@@ -35,9 +36,11 @@ src/
 │   ├── index.html
 │   ├── cadastro.html
 │   ├── paginaPrincipal.php
+│   ├── publicarPost.php
 ├── style/
 │   ├── global.css
 │   ├── styleAcesso.css
+│   ├── stylePublicarPost.css
 │   ├── stylePaginaPrincipal.css
 ├── scripts/
 │   ├── inserirPostagensTela.js
