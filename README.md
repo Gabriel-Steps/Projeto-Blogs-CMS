@@ -30,6 +30,7 @@ src/
 │   ├── conexao.php
 │   ├── loginUsuario.php
 │   ├── logout.php
+│   ├── obterInformacoesPosts.php
 ├── pages/
 │   ├── index.html
 │   ├── cadastro.html
@@ -38,10 +39,15 @@ src/
 │   ├── global.css
 │   ├── styleAcesso.css
 │   ├── stylePaginaPrincipal.css
+├── scripts/
+│   ├── inserirPostagensTela.js
+│   ├── scriptTelaPrincipalEstilo.js
 ├── uploads/
 │   └── (imagens de perfil dos usuários)
 └── images/
     └── imagemAcesso.png
+    └── menu-icon-x.png
+    └── menu-icon.png
 ```
 
 ## Tecnologias Utilizadas
@@ -49,6 +55,7 @@ src/
 - **Frontend:**
   - HTML5
   - CSS3
+  - Javascript
 
 - **Backend:**
   - PHP 8+
